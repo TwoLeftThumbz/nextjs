@@ -43,7 +43,7 @@ const StyledarkSizemediumState2 = ({
       style={styledarkSizemediumStateStyle}
     >
       <b className="relative leading-[16px]" style={labelStyle}>
-        {label}
+        {"Label" + "Type" || label}
       </b>
     </div>
   );
