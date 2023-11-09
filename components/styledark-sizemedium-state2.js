@@ -9,6 +9,7 @@ const StyledarkSizemediumState2 = ({
   propBackground,
   propBorder,
   propColor,
+  label = "white",
 }) => {
   const styledarkSizemediumStateStyle = useMemo(() => {
     return {
@@ -42,7 +43,7 @@ const StyledarkSizemediumState2 = ({
       style={styledarkSizemediumStateStyle}
     >
       <b className="relative leading-[16px]" style={labelStyle}>
-        Button
+        {label}
       </b>
     </div>
   );
