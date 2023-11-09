@@ -1,15 +1,19 @@
+import { useContext } from "react";
 import SizeSmallTypeBorderIcon1 from "./size-small-type-border-icon1";
 import SizeSmallTypeBorderIcon2 from "./size-small-type-border-icon2";
 import SizeSmallTypeBorderIcon from "./size-small-type-border-icon";
+import { ComponentsContext } from "../context/ComponentsContext";
 import styles from "./chips-container.module.css";
 
 const ChipsContainer = () => {
+  const componentsContext = useContext(ComponentsContext);
+  const components = componentsContext.components;
   return (
     <div className={styles.chips}>
       <SizeSmallTypeBorderIcon1
         propTop="20px"
         propBorder="unset"
-        propPadding="0px var(--padding-base)"
+        propPadding="var(--padding-0) var(--padding-base)"
         propBackgroundColor="#006fee"
         propWidth="101px"
         propHeight="45px"
@@ -36,7 +40,7 @@ const ChipsContainer = () => {
         propPosition="absolute"
         propTop="97px"
         propLeft="20px"
-        propPadding="0px var(--padding-base)"
+        propPadding="var(--padding-0) var(--padding-base)"
         propBorder="unset"
         propGap="12px"
         propBackgroundColor="#006fee"
@@ -74,7 +78,7 @@ const ChipsContainer = () => {
         iconlyLightOutlineCloseSq="/iconlylightoutlineclose-square1.svg"
         propTop="174px"
         propBorder="unset"
-        propPadding="0px var(--padding-base)"
+        propPadding="var(--padding-0) var(--padding-base)"
         propGap="12px"
         propBackgroundColor="#006fee"
         propWidth="125px"
@@ -108,7 +112,7 @@ const ChipsContainer = () => {
         propPosition="absolute"
         propTop="97px"
         propLeft="159px"
-        propPadding="0px var(--padding-base)"
+        propPadding="var(--padding-0) var(--padding-base)"
         propBorder="unset"
         propGap="12px"
         propBackgroundColor="#006fee"
@@ -145,7 +149,7 @@ const ChipsContainer = () => {
       <SizeSmallTypeBorderIcon1
         propTop="20px"
         propBorder="unset"
-        propPadding="0px var(--padding-base)"
+        propPadding="var(--padding-0) var(--padding-base)"
         propBackgroundColor="#006fee"
         propWidth="83px"
         propHeight="38px"
@@ -172,7 +176,7 @@ const ChipsContainer = () => {
         propPosition="absolute"
         propTop="97px"
         propLeft="285px"
-        propPadding="0px var(--padding-base)"
+        propPadding="var(--padding-0) var(--padding-base)"
         propBorder="unset"
         propGap="12px"
         propBackgroundColor="#006fee"
@@ -194,7 +198,7 @@ const ChipsContainer = () => {
         iconlyLightOutlineCloseSq="/iconlylightoutlineclose-square3.svg"
         propTop="174px"
         propBorder="unset"
-        propPadding="0px var(--padding-base)"
+        propPadding="var(--padding-0) var(--padding-base)"
         propGap="12px"
         propBackgroundColor="#006fee"
         propWidth="107px"
@@ -225,7 +229,7 @@ const ChipsContainer = () => {
       <SizeSmallTypeBorderIcon1
         propTop="20px"
         propBorder="unset"
-        propPadding="0px var(--padding-base)"
+        propPadding="var(--padding-0) var(--padding-base)"
         propBackgroundColor="#006fee"
         propWidth="69px"
         propHeight="32px"
@@ -239,7 +243,7 @@ const ChipsContainer = () => {
         iconlyLightOutlineCloseSq="/iconlylightoutlineclose-square5.svg"
         propTop="174px"
         propBorder="unset"
-        propPadding="0px var(--padding-base)"
+        propPadding="var(--padding-0) var(--padding-base)"
         propGap="12px"
         propBackgroundColor="#006fee"
         propWidth="89px"

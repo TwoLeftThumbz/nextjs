@@ -35,7 +35,7 @@
 .rectangleWrapper {
   align-self: stretch;
   justify-content: flex-end;
-  padding: var(--padding-12xs) 0;
+  padding: var(--padding-12xs) var(--padding-0);
 }
 .stateinactiveStyleiconTh {
   position: absolute;

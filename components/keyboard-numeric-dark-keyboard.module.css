@@ -53,7 +53,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  padding: var(--padding-4xs) 0;
+  padding: var(--padding-4xs) var(--padding-0);
   box-sizing: border-box;
 }
 .keyboardnumericdarkkeyboard {
@@ -68,7 +68,7 @@
   height: 269px;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: var(--padding-8xs) 0 var(--padding-12xs);
+  padding: var(--padding-8xs) var(--padding-0) var(--padding-12xs);
   gap: var(--gap-90xl);
   z-index: 1;
   text-align: center;

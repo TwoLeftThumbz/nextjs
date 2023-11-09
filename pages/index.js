@@ -8,6 +8,11 @@ import {
 } from "@mui/material";
 import { LocalizationProvider, DatePicker } from "@mui/x-date-pickers";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
+import ParisCardContainer from "../components/paris-card-container";
+import GreeceContainer from "../components/greece-container";
+import RecommendedHolidaysCard from "../components/recommended-holidays-card";
+import HotelCardContainer from "../components/hotel-card-container";
+import HotelCardForm from "../components/hotel-card-form";
 import VariantContainedSizeLarge from "../components/variant-contained-size-large";
 import styles from "./index.module.css";
 
@@ -279,50 +284,26 @@ const CoverFrame = () => {
                     </a>
                   </div>
                   <div className={styles.cardsContainer}>
-                    <button className={styles.card1}>
-                      <div className={styles.destinationDetailsWrapper}>
-                        <div className={styles.destinationDetails}>
-                          <b className={styles.paris}>Paris</b>
-                          <div className={styles.fromParent}>
-                            <div className={styles.from}>from</div>
-                            <div className={styles.div}>$699</div>
-                          </div>
-                        </div>
-                      </div>
-                    </button>
-                    <button className={styles.card1}>
-                      <div className={styles.destinationDetailsContainer}>
-                        <div className={styles.destinationDetails}>
-                          <b className={styles.paris}>Greece</b>
-                          <div className={styles.fromGroup}>
-                            <div className={styles.from}>from</div>
-                            <div className={styles.div1}>$1079</div>
-                          </div>
-                        </div>
-                      </div>
-                    </button>
-                    <button className={styles.card1}>
-                      <div className={styles.destinationDetailsFrame}>
-                        <div className={styles.destinationDetails}>
-                          <b className={styles.paris}>Norway</b>
-                          <div className={styles.fromContainer}>
-                            <div className={styles.from}>from</div>
-                            <div className={styles.div}>$895</div>
-                          </div>
-                        </div>
-                      </div>
-                    </button>
-                    <button className={styles.card1}>
-                      <div className={styles.frameDiv}>
-                        <div className={styles.destinationDetails}>
-                          <b className={styles.paris}>Tuscany</b>
-                          <div className={styles.fromParent1}>
-                            <div className={styles.from}>from</div>
-                            <div className={styles.div3}>$1245</div>
-                          </div>
-                        </div>
-                      </div>
-                    </button>
+                    <ParisCardContainer
+                      destinationPrice="Paris"
+                      destinationPriceText="$699"
+                    />
+                    <GreeceContainer
+                      destinationPrice="Greece"
+                      destinationPriceGreece="$1079"
+                    />
+                    <ParisCardContainer
+                      destinationPrice="Norway"
+                      destinationPriceText="$895"
+                      propBackgroundImage="url('/frame-698@3x.png')"
+                    />
+                    <GreeceContainer
+                      destinationPrice="Tuscany"
+                      destinationPriceGreece="$1245"
+                      propBackgroundImage="url('/frame-699@3x.png')"
+                      propPadding="var(--padding-0) 0.000003814697265625px var(--padding-0) var(--padding-0)"
+                      propBoxSizing="border-box"
+                    />
                   </div>
                   <div className={styles.viewAllBottom}>
                     <div className={styles.viewAllDestinations1}>
@@ -352,70 +333,30 @@ const CoverFrame = () => {
                     </a>
                   </div>
                   <div className={styles.recCardsContainer}>
-                    <button className={styles.recCard1}>
-                      <img
-                        className={styles.unsplash5mv818tzxeoIcon}
-                        alt=""
-                        src="/unsplash5mv818tzxeo@2x.png"
-                      />
-                      <div className={styles.holidayDetails}>
-                        <div className={styles.recTitle}>
-                          <div className={styles.baliParent}>
-                            <div className={styles.bali}>Bali</div>
-                            <div className={styles.d3n}>4D3N</div>
-                          </div>
-                          <div className={styles.div4}>$899</div>
-                        </div>
-                      </div>
-                    </button>
-                    <button className={styles.recCard1}>
-                      <img
-                        className={styles.unsplash5mv818tzxeoIcon}
-                        alt=""
-                        src="/unsplashj82dskoxvy8@2x.png"
-                      />
-                      <div className={styles.holidayDetails}>
-                        <div className={styles.recTitle}>
-                          <div className={styles.baliParent}>
-                            <div className={styles.bali}>Switzerland</div>
-                            <div className={styles.d3n}>6D5N</div>
-                          </div>
-                          <div className={styles.div5}>$900</div>
-                        </div>
-                      </div>
-                    </button>
-                    <button className={styles.recCard3}>
-                      <img
-                        className={styles.unsplash5mv818tzxeoIcon}
-                        alt=""
-                        src="/unsplash4ezkckxolre@2x.png"
-                      />
-                      <div className={styles.holidayDetails}>
-                        <div className={styles.recTitle}>
-                          <div className={styles.baliParent}>
-                            <div className={styles.bali}>Boracay</div>
-                            <div className={styles.d3n}>5D4N</div>
-                          </div>
-                          <div className={styles.div4}>$699</div>
-                        </div>
-                      </div>
-                    </button>
-                    <button className={styles.recCard4}>
-                      <img
-                        className={styles.unsplash5mv818tzxeoIcon}
-                        alt=""
-                        src="/unsplashuyqmxhjr3ne@2x.png"
-                      />
-                      <div className={styles.holidayDetails}>
-                        <div className={styles.recTitle}>
-                          <div className={styles.baliParent}>
-                            <div className={styles.bali}>Palawan</div>
-                            <div className={styles.d3n}>4D3N</div>
-                          </div>
-                          <div className={styles.div7}>$789</div>
-                        </div>
-                      </div>
-                    </button>
+                    <RecommendedHolidaysCard
+                      locationImageUrl="/unsplash5mv818tzxeo@2x.png"
+                      destinationName="Bali"
+                      packageDuration="4D3N"
+                      price="$899"
+                    />
+                    <RecommendedHolidaysCard
+                      locationImageUrl="/unsplashj82dskoxvy8@2x.png"
+                      destinationName="Switzerland"
+                      packageDuration="6D5N"
+                      price="$900"
+                    />
+                    <RecommendedHolidaysCard
+                      locationImageUrl="/unsplash4ezkckxolre@2x.png"
+                      destinationName="Boracay"
+                      packageDuration="5D4N"
+                      price="$699"
+                    />
+                    <RecommendedHolidaysCard
+                      locationImageUrl="/unsplashuyqmxhjr3ne@2x.png"
+                      destinationName="Palawan"
+                      packageDuration="4D3N"
+                      price="$789"
+                    />
                   </div>
                   <div className={styles.viewAllBottom1}>
                     <div className={styles.viewAllHolidays1}>
@@ -441,148 +382,43 @@ const CoverFrame = () => {
                     </a>
                   </div>
                   <div className={styles.hotelCards}>
-                    <div className={styles.hotelCard1}>
-                      <a className={styles.hotelCard}>
-                        <img
-                          className={styles.unsplashhhrfsdwxxusIcon}
-                          alt=""
-                          src="/unsplashhhrfsdwxxus@2x.png"
-                        />
-                        <div className={styles.stayDetails}>
-                          <div className={styles.entireBungalowParent}>
-                            <div className={styles.entireBungalow}>
-                              Entire bungalow
-                            </div>
-                            <b className={styles.matterhornSuites}>
-                              Matterhorn Suites
-                            </b>
-                            <div className={styles.night}>$575/night</div>
-                          </div>
-                          <img
-                            className={styles.videoIcon}
-                            alt=""
-                            src="/video.svg"
-                          />
-                        </div>
-                        <div className={styles.rating}>
-                          <div className={styles.vectorParent}>
-                            <img
-                              className={styles.vectorIcon}
-                              alt=""
-                              src="/vector.svg"
-                            />
-                            <div className={styles.div8}>4.9</div>
-                          </div>
-                          <div className={styles.reviews}>(60 reviews)</div>
-                        </div>
-                        <button className={styles.moreDetailsButton}>
-                          <div className={styles.button1}>More details</div>
-                        </button>
-                      </a>
-                    </div>
-                    <div className={styles.hotelCard1}>
-                      <a className={styles.hotelCard}>
-                        <img
-                          className={styles.unsplashhhrfsdwxxusIcon}
-                          alt=""
-                          src="/unsplashtsn8bpopveo@2x.png"
-                        />
-                        <div className={styles.stayDetails1}>
-                          <div className={styles.entireBungalowParent}>
-                            <div className={styles.entireBungalow}>
-                              2-Story beachfront suite
-                            </div>
-                            <b className={styles.matterhornSuites}>
-                              Discovery Shores
-                            </b>
-                            <div className={styles.night}>$360/night</div>
-                          </div>
-                        </div>
-                        <div className={styles.rating}>
-                          <div className={styles.vectorParent}>
-                            <img
-                              className={styles.vectorIcon}
-                              alt=""
-                              src="/vector.svg"
-                            />
-                            <div className={styles.div8}>4.8</div>
-                          </div>
-                          <div className={styles.reviews}>(116 reviews)</div>
-                        </div>
-                        <button className={styles.moreDetailsButton}>
-                          <div className={styles.button1}>More details</div>
-                        </button>
-                      </a>
-                    </div>
-                    <div className={styles.hotelCard1}>
-                      <a className={styles.hotelCard4}>
-                        <img
-                          className={styles.unsplashhhrfsdwxxusIcon}
-                          alt=""
-                          src="/unsplashrlwe8f8anoc@2x.png"
-                        />
-                        <div className={styles.stayDetails1}>
-                          <div className={styles.entireBungalowParent}>
-                            <div className={styles.entireBungalow}>
-                              Single deluxe hut
-                            </div>
-                            <b className={styles.arcticHut}>{`Arctic Hut `}</b>
-                            <div className={styles.night}>$420/night</div>
-                          </div>
-                        </div>
-                        <div className={styles.rating2}>
-                          <div className={styles.vectorContainer}>
-                            <img
-                              className={styles.vectorIcon2}
-                              alt=""
-                              src="/vector1.svg"
-                            />
-                            <div className={styles.div8}>4.7</div>
-                          </div>
-                          <div className={styles.reviews}>(78 reviews)</div>
-                        </div>
-                        <button className={styles.moreDetailsButton}>
-                          <div className={styles.button1}>More details</div>
-                        </button>
-                      </a>
-                    </div>
-                    <div className={styles.hotelCard41}>
-                      <a className={styles.hotelCard5}>
-                        <img
-                          className={styles.unsplashhhrfsdwxxusIcon}
-                          alt=""
-                          src="/unsplashyqrybvxug5q@2x.png"
-                        />
-                        <div className={styles.stayDetails}>
-                          <div className={styles.entireBungalowParent}>
-                            <div className={styles.entireBungalow}>
-                              Deluxe King Room
-                            </div>
-                            <b className={styles.arcticHut}>Lake Louise Inn</b>
-                            <div className={styles.night}>$244/night</div>
-                          </div>
-                          <img
-                            className={styles.videoIcon}
-                            alt=""
-                            src="/video.svg"
-                          />
-                        </div>
-                        <div className={styles.rating}>
-                          <div className={styles.vectorParent}>
-                            <img
-                              className={styles.vectorIcon}
-                              alt=""
-                              src="/vector.svg"
-                            />
-                            <div className={styles.div8}>4.6</div>
-                          </div>
-                          <div className={styles.reviews}>(63 reviews)</div>
-                        </div>
-                        <button className={styles.moreDetailsButton3}>
-                          <div className={styles.button1}>More details</div>
-                        </button>
-                      </a>
-                    </div>
+                    <HotelCardContainer
+                      propertyDimensions="/unsplashhhrfsdwxxus@2x.png"
+                      accommodationType="Entire bungalow"
+                      hotelName="Matterhorn Suites"
+                      pricePerNight="$575/night"
+                      rating="4.9"
+                      reviewCount="(60 reviews)"
+                    />
+                    <HotelCardForm
+                      unsplashtSn8bPOpVEo="/unsplashtsn8bpopveo@2x.png"
+                      storyBeachfrontSuite="2-Story beachfront suite"
+                      discoveryShores="Discovery Shores"
+                      night="$360/night"
+                      vector="/vector.svg"
+                      prop="4.8"
+                      reviews="(116 reviews)"
+                    />
+                    <HotelCardForm
+                      unsplashtSn8bPOpVEo="/unsplashrlwe8f8anoc@2x.png"
+                      storyBeachfrontSuite="Single deluxe hut"
+                      discoveryShores="Arctic Hut "
+                      night="$420/night"
+                      vector="/vector1.svg"
+                      prop="4.7"
+                      reviews="(78 reviews)"
+                      propPadding="var(--padding-0) var(--padding-0) var(--padding-0) 0.00000108736855963798px"
+                      propBoxSizing="border-box"
+                    />
+                    <HotelCardContainer
+                      propertyDimensions="/unsplashyqrybvxug5q@2x.png"
+                      accommodationType="Deluxe King Room"
+                      hotelName="Lake Louise Inn"
+                      pricePerNight="$244/night"
+                      rating="4.6"
+                      reviewCount="(63 reviews)"
+                      propBorder="0.7px solid #cdddec"
+                    />
                   </div>
                   <div className={styles.viewAllStaysGroup}>
                     <div className={styles.viewAllStays1}>View all stays</div>
@@ -631,7 +467,7 @@ const CoverFrame = () => {
                           />
                         </div>
                       </div>
-                      <button className={styles.button5}>
+                      <button className={styles.button1}>
                         <VariantContainedSizeLarge
                           buttonText="submit"
                           variantContainedSizeLargeBoxSizing="border-box"
