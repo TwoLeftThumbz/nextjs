@@ -1,0 +1,56 @@
+.label,
+.search1 {
+  position: relative;
+}
+.label {
+  align-self: stretch;
+  line-height: 140%;
+}
+.search1 {
+  border-radius: var(--br-8xs);
+  border: 1px dashed var(--color-mediumslateblue);
+  box-sizing: border-box;
+  width: 808px;
+  height: 233px;
+  overflow: hidden;
+  flex-shrink: 0;
+  font-size: var(--body-large-semibold-size);
+  color: var(--others-black);
+}
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+}
+.dropdown2,
+.tag1 {
+  position: relative;
+  border-radius: var(--br-8xs);
+  border: 1px dashed var(--color-mediumslateblue);
+  box-sizing: border-box;
+  width: 614px;
+  height: 296px;
+  overflow: hidden;
+  flex-shrink: 0;
+  font-size: var(--body-xsmall-semibold-size);
+  color: var(--alerts-status-success);
+}
+.dropdown2 {
+  width: 356px;
+  height: 520px;
+  font-size: var(--body-medium-semibold-size);
+  color: var(--greyscale-300);
+}
+.autoLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-41xl);
+  text-align: left;
+  font-size: var(--h3-bold-size);
+  color: var(--greyscale-900);
+  font-family: var(--body-medium-semibold);
+}

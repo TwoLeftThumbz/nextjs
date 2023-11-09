@@ -1,0 +1,38 @@
+.additionalIcons {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.text,
+.typebuttonType2iconType {
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.2px;
+  display: none;
+  height: 40px;
+  flex-shrink: 0;
+}
+.typebuttonType2iconType {
+  position: absolute;
+  top: 810px;
+  left: 410px;
+  border-radius: var(--br-base);
+  background-color: var(--dark-dark-2);
+  box-shadow: var(--button-shadow-1);
+  border: 1px solid var(--dark-dark-3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-mid);
+  gap: var(--gap-5xs);
+  text-align: center;
+  font-size: var(--body-small-regular-size);
+  color: var(--greyscale-700);
+  font-family: var(--body-medium-semibold);
+}

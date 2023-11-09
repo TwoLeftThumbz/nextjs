@@ -1,0 +1,56 @@
+.groupIcon {
+  position: relative;
+  width: 185.9px;
+  height: 180px;
+}
+.loremIpsumDolor,
+.modalTitle {
+  align-self: stretch;
+  position: relative;
+  line-height: 140%;
+}
+.loremIpsumDolor {
+  font-size: var(--body-large-semibold-size);
+  letter-spacing: 0.2px;
+  color: var(--others-white);
+}
+.autoLayoutVertical,
+.autoLayoutVertical1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.autoLayoutVertical1 {
+  align-items: center;
+  gap: var(--gap-xs);
+}
+.frameIcon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.themedarkModal {
+  position: absolute;
+  top: calc(50% - 269px);
+  left: calc(50% + 20px);
+  border-radius: var(--br-33xl);
+  background-color: var(--dark-dark-2);
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-21xl) var(--padding-13xl) var(--padding-13xl);
+  box-sizing: border-box;
+  gap: var(--gap-13xl);
+  text-align: center;
+  font-size: var(--h4-bold-size);
+  color: var(--primary-500);
+  font-family: var(--body-medium-semibold);
+}

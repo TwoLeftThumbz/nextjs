@@ -1,0 +1,8 @@
+.typelogoDefaultComponentl {
+  position: absolute;
+  top: 99px;
+  left: 20px;
+  border-radius: var(--br-981xl);
+  width: 60px;
+  height: 60px;
+}

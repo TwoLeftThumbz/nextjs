@@ -1,0 +1,15 @@
+.input {
+  position: relative;
+  border-radius: var(--br-8xs);
+  box-shadow: var(--button-shadow-2);
+  border: 1px dashed var(--color-mediumslateblue);
+  box-sizing: border-box;
+  width: 1284px;
+  height: 1075px;
+  overflow: hidden;
+  flex-shrink: 0;
+  text-align: left;
+  font-size: var(--body-large-semibold-size);
+  color: var(--greyscale-700);
+  font-family: var(--body-medium-semibold);
+}

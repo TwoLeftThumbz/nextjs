@@ -1,0 +1,11 @@
+.autoLayout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-41xl);
+  text-align: left;
+  font-size: var(--h3-bold-size);
+  color: var(--greyscale-900);
+  font-family: var(--body-medium-semibold);
+}

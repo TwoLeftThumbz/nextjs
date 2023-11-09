@@ -1,0 +1,51 @@
+.iconlycurvedchart {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.horizontalTab {
+  position: relative;
+  letter-spacing: 0.2px;
+  line-height: 140%;
+  font-weight: 600;
+}
+.autoLayoutHorizontal {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.rectangle {
+  align-self: stretch;
+  position: relative;
+  border-radius: var(--br-81xl);
+  background-color: var(--dark-dark-3);
+  height: 2px;
+}
+.rectangleWrapper,
+.stateinactiveStyleiconTh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rectangleWrapper {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: var(--padding-12xs) var(--padding-0);
+}
+.stateinactiveStyleiconTh {
+  position: absolute;
+  top: 91px;
+  left: 212px;
+  width: 200px;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  text-align: center;
+  font-size: var(--body-xlarge-bold-size);
+  color: var(--greyscale-700);
+  font-family: var(--body-medium-semibold);
+}

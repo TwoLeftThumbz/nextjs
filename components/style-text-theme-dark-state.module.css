@@ -1,0 +1,25 @@
+.ellipseStrokeIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.unselected {
+  position: relative;
+  letter-spacing: 0.2px;
+  line-height: 140%;
+  font-weight: 600;
+}
+.styletextThemedarkState {
+  position: absolute;
+  top: 64px;
+  left: 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  text-align: left;
+  font-size: var(--body-xlarge-bold-size);
+  color: var(--others-white);
+  font-family: var(--body-medium-semibold);
+}

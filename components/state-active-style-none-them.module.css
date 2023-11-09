@@ -1,0 +1,30 @@
+.horizontalTab,
+.rectangle {
+  align-self: stretch;
+  position: relative;
+}
+.horizontalTab {
+  letter-spacing: 0.2px;
+  line-height: 140%;
+  font-weight: 600;
+}
+.rectangle {
+  border-radius: var(--br-81xl);
+  background-color: var(--primary-500);
+  height: 4px;
+}
+.stateactiveStylenoneThem {
+  position: absolute;
+  top: 162px;
+  left: 20px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  text-align: center;
+  font-size: var(--body-xlarge-bold-size);
+  color: var(--primary-500);
+  font-family: var(--body-medium-semibold);
+}

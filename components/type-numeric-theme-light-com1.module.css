@@ -1,0 +1,7 @@
+.typenumericThemelightCom {
+  border-radius: var(--br-33xl) var(--br-33xl) 0 0;
+  background-color: var(--greyscale-100);
+  backdrop-filter: var(--bg-blur);
+  width: 430px;
+  height: 302px;
+}

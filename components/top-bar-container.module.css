@@ -1,0 +1,44 @@
+.label {
+  align-self: stretch;
+  position: relative;
+  line-height: 140%;
+}
+.statusBar {
+  position: relative;
+  border-radius: var(--br-8xs);
+  border: 1px dashed var(--color-mediumslateblue);
+  box-sizing: border-box;
+  width: 463px;
+  height: 417px;
+  overflow: hidden;
+  flex-shrink: 0;
+  font-size: var(--h4-bold-size);
+}
+.topBars {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+}
+.divider2 {
+  position: relative;
+  border-radius: var(--br-8xs);
+  border: 1px dashed var(--color-mediumslateblue);
+  box-sizing: border-box;
+  width: 420px;
+  height: 64px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.autoLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-41xl);
+  text-align: left;
+  font-size: var(--h3-bold-size);
+  color: var(--greyscale-900);
+  font-family: var(--body-medium-semibold);
+}

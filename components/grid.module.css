@@ -1,0 +1,107 @@
+.b {
+  position: relative;
+}
+.static {
+  position: absolute;
+  top: 407px;
+  left: 0;
+  background-color: var(--color-mistyrose);
+  width: 24px;
+  height: 112px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-26xl) var(--padding-12xs);
+  box-sizing: border-box;
+}
+.columnGrid {
+  position: relative;
+  width: 428px;
+  height: 926px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.gridVisualization,
+.static1 {
+  display: flex;
+  flex-direction: column;
+}
+.gridVisualization {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 428px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.static1 {
+  top: 407px;
+  left: calc(50% - 12px);
+  background-color: var(--color-mistyrose);
+  width: 24px;
+  height: 112px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-26xl) var(--padding-12xs);
+  box-sizing: border-box;
+}
+.static1,
+.static2,
+.unionIcon {
+  position: absolute;
+  overflow: hidden;
+}
+.static2 {
+  top: 407px;
+  right: 0;
+  background-color: var(--color-mistyrose);
+  width: 24px;
+  height: 112px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-26xl) var(--padding-12xs);
+  box-sizing: border-box;
+}
+.unionIcon {
+  height: 240.98%;
+  width: 163.44%;
+  top: 0;
+  right: -63.44%;
+  bottom: -140.98%;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.auto {
+  position: absolute;
+  top: calc(50% - 11px);
+  left: calc(50% - 19.7px);
+}
+.fluid,
+.grid {
+  overflow: hidden;
+}
+.fluid {
+  position: absolute;
+  width: 18%;
+  top: 407px;
+  right: 29.19%;
+  left: 52.81%;
+  height: 112px;
+}
+.grid {
+  position: relative;
+  background-color: var(--greyscale-200);
+  width: 430px;
+  height: 932px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: var(--body-xlarge-bold-size);
+  color: var(--others-black);
+  font-family: var(--components-button-large);
+}

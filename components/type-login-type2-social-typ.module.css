@@ -1,0 +1,39 @@
+.frameIcon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.continueWithFacebook {
+  position: relative;
+  letter-spacing: 0.2px;
+  line-height: 140%;
+  font-weight: 600;
+}
+.autoLayoutHorizontal,
+.typeloginType2socialTyp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.autoLayoutHorizontal {
+  flex-direction: row;
+  gap: var(--gap-xs);
+}
+.typeloginType2socialTyp {
+  position: absolute;
+  top: 736px;
+  left: 412px;
+  border-radius: var(--br-81xl);
+  background-color: var(--dark-dark-2);
+  border: 1px solid var(--dark-dark-3);
+  box-sizing: border-box;
+  width: 382px;
+  flex-direction: column;
+  padding: var(--padding-lg) var(--padding-13xl);
+  text-align: left;
+  font-size: var(--body-large-semibold-size);
+  color: var(--others-white);
+  font-family: var(--body-medium-semibold);
+}

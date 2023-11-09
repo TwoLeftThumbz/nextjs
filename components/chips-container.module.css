@@ -1,0 +1,14 @@
+.chips {
+  position: relative;
+  border-radius: var(--br-8xs);
+  border: 1px dashed var(--color-mediumslateblue);
+  box-sizing: border-box;
+  width: 390px;
+  height: 470px;
+  overflow: hidden;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: var(--body-medium-semibold-size);
+  color: var(--primary-500);
+  font-family: var(--body-medium-semibold);
+}

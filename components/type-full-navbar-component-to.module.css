@@ -1,0 +1,77 @@
+.logoIcon {
+  position: relative;
+  border-radius: var(--br-981xl);
+  width: 32px;
+  height: 32px;
+}
+.avatarIcon,
+.iconlylightarrowLeft {
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
+.avatarIcon {
+  display: none;
+}
+.header {
+  flex: 1;
+  position: relative;
+  line-height: 140%;
+}
+.autoLayoutHorizontal1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.iconlycurvedheart {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.autoLayoutHorizontal2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-xl);
+}
+.autoLayoutHorizontal,
+.autoLayoutHorizontal3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+}
+.autoLayoutHorizontal {
+  height: 48px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-5xl);
+  box-sizing: border-box;
+  gap: var(--gap-xs);
+}
+.autoLayoutHorizontal3 {
+  align-items: flex-end;
+  justify-content: center;
+  padding: var(--padding-0) var(--padding-5xl);
+}
+.typefullNavbarComponentto {
+  position: absolute;
+  top: 208px;
+  left: 16px;
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  text-align: left;
+  font-size: var(--h4-bold-size);
+  color: var(--greyscale-900);
+  font-family: var(--body-medium-semibold);
+}

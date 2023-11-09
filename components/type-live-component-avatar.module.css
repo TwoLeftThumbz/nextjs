@@ -1,0 +1,36 @@
+.ellipse,
+.ellipseIcon {
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+}
+.ellipseIcon {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.ellipse {
+  height: 25%;
+  width: 25%;
+  top: 75%;
+  right: 37.5%;
+  left: 37.5%;
+  background-color: var(--primary-500);
+  border: 1.6px solid var(--others-white);
+  box-sizing: border-box;
+  display: none;
+}
+.typeliveComponentavatar {
+  position: absolute;
+  top: 16px;
+  left: 316px;
+  border-radius: var(--br-981xl);
+  width: 48px;
+  height: 48px;
+}

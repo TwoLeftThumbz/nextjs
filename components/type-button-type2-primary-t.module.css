@@ -1,0 +1,30 @@
+.button,
+.typebuttonType2primaryT {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  position: relative;
+  letter-spacing: 0.2px;
+  line-height: 140%;
+  width: 350px;
+  flex-shrink: 0;
+}
+.typebuttonType2primaryT {
+  position: absolute;
+  top: 232px;
+  left: 16px;
+  border-radius: var(--br-81xl);
+  background-color: var(--color-royalblue-100);
+  box-shadow: var(--button-shadow-1);
+  width: 382px;
+  height: 58px;
+  flex-direction: row;
+  padding: var(--padding-0) var(--padding-base);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--body-large-semibold-size);
+  color: var(--primary-100);
+  font-family: var(--body-medium-semibold);
+}

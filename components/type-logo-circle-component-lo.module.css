@@ -1,0 +1,33 @@
+.rectangle {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-981xl);
+  background: linear-gradient(-73.83deg, #1bac4b, #46d375);
+  display: none;
+}
+.logoIcon {
+  position: absolute;
+  height: 63.33%;
+  width: 49.17%;
+  top: 20%;
+  right: 24.17%;
+  bottom: 16.67%;
+  left: 26.67%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.typelogoCircleComponentlo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: var(--br-981xl);
+  background: linear-gradient(-73.83deg, #246bfd, #5089fd);
+  width: 60px;
+  height: 60px;
+}

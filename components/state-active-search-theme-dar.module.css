@@ -1,0 +1,33 @@
+.iconlylightsearch {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+.search {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.2px;
+  line-height: 140%;
+  font-weight: 600;
+}
+.stateactiveSearchThemedar {
+  position: absolute;
+  top: 88px;
+  left: 412px;
+  border-radius: var(--br-base);
+  background-color: var(--transparent-blue);
+  border: 1px solid var(--greyscale-300);
+  box-sizing: border-box;
+  width: 382px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xl);
+  gap: var(--gap-xs);
+  text-align: left;
+  font-size: var(--body-large-semibold-size);
+  color: var(--others-black);
+  font-family: var(--body-medium-semibold);
+}

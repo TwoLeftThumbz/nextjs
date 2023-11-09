@@ -1,0 +1,38 @@
+.horizontalTab,
+.rectangle {
+  align-self: stretch;
+  position: relative;
+}
+.horizontalTab {
+  letter-spacing: 0.2px;
+  line-height: 140%;
+  font-weight: 600;
+}
+.rectangle {
+  border-radius: var(--br-81xl);
+  background-color: var(--dark-dark-3);
+  height: 2px;
+}
+.rectangleWrapper,
+.stateinactiveStylenoneTh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rectangleWrapper {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: var(--padding-12xs) var(--padding-0);
+}
+.stateinactiveStylenoneTh {
+  position: absolute;
+  top: 91px;
+  left: 20px;
+  width: 160px;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  text-align: center;
+  font-size: var(--body-xlarge-bold-size);
+  color: var(--greyscale-700);
+  font-family: var(--body-medium-semibold);
+}

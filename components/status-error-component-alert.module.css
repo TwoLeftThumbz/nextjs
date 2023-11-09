@@ -1,0 +1,29 @@
+.iconlyboldinfoCircle {
+  position: relative;
+  width: 18px;
+  height: 18px;
+}
+.alertMessage {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.2px;
+}
+.statuserrorComponentalert {
+  position: absolute;
+  top: 170px;
+  left: 20px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-tomato-100);
+  width: 382px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-xs);
+  box-sizing: border-box;
+  gap: var(--gap-7xs);
+  text-align: left;
+  font-size: var(--body-xsmall-semibold-size);
+  color: var(--alerts-status-error);
+  font-family: var(--body-medium-semibold);
+}

@@ -1,0 +1,20 @@
+.tagMarker {
+  position: relative;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+}
+.styleborderlessStatesucces {
+  position: absolute;
+  top: 108px;
+  left: 424px;
+  border-radius: var(--br-7xs);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-7xs) var(--padding-3xs);
+  text-align: left;
+  font-size: var(--body-xsmall-semibold-size);
+  color: var(--alerts-status-success);
+  font-family: var(--body-medium-semibold);
+}

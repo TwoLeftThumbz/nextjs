@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SF+Pro+Text:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-sf-pro-display: "SF Pro Display";
+  --body-medium-semibold: Urbanist;
+  --components-button-large: Roboto;
+  --font-inter: Inter;
+  --font-sf-pro-text: "SF Pro Text";
+  --font-baloo-bhai: "Baloo Bhai";
+
+  /* font sizes */
+  --h4-bold-size: 24px;
+  --body-medium-semibold-size: 14px;
+  --body-large-semibold-size: 16px;
+  --body-xlarge-bold-size: 18px;
+  --h3-bold-size: 32px;
+  --h1-bold-size: 48px;
+  --body-xsmall-semibold-size: 10px;
+  --font-size-3xl-5: 22.5px;
+  --body-small-regular-size: 12px;
+  --components-button-large-size: 15px;
+  --font-size-xl: 20px;
+  --font-size-sm-5: 13.5px;
+  --font-size-xs-2: 11.2px;
+  --font-size-3xl-4: 22.4px;
+  --font-size-base-5: 16.5px;
+  --font-size-3xl: 22px;
+  --font-size-4xl-9: 23.9px;
+  --font-size-9xl-4: 28.4px;
+  --font-size-2xs-5: 10.5px;
+  --font-size-mid-9: 17.9px;
+  --font-size-3xs-7: 9.7px;
+  --font-size-4xs: 9px;
+
+  /* Colors */
+  --color-gray-100: #8e8e94;
+  --greyscale-600: #757575;
+  --color-gray-200: #2c2c2c;
+  --dark-dark-2: #2b2b2b;
+  --color-gray-300: #282828;
+  --greyscale-900: #212121;
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --color-gray-400: rgba(255, 255, 255, 0.7);
+  --color-gray-500: rgba(0, 0, 0, 0.09);
+  --color-gray-600: rgba(0, 0, 0, 0.1);
+  --color-gray-700: rgba(117, 117, 117, 0.12);
+  --color-gray-800: rgba(42, 43, 57, 0.24);
+  --color-gray-900: rgba(31, 34, 42, 0);
+  --color-gray-1000: rgba(33, 33, 33, 0.85);
+  --greyscale-800: #424242;
+  --dark-dark-3: #3d3d44;
+  --color-darkslategray-100: #303030;
+  --others-white: #fff;
+  --color-mediumslateblue: #7b61ff;
+  --color-royalblue-100: #006fee;
+  --alerts-status-button-disabled: #1d56ca;
+  --primary-500: #1c56c6;
+  --transparent-blue: rgba(36, 107, 253, 0.12);
+  --greyscale-700: #616161;
+  --greyscale-200: rgba(77, 77, 77, 0.5);
+  --others-black: #000;
+  --color-mistyrose: #f7cfd6;
+  --color-gainsboro-100: #e0e0e0;
+  --color-gainsboro-200: #d9d9d9;
+  --color-gainsboro-300: rgba(226, 226, 226, 0.1);
+  --greyscale-300: rgba(224, 224, 224, 0.85);
+  --alerts-status-success: #23b229;
+  --alerts-status-error: #c82626;
+  --alerts-status-warning: #facc15;
+  --color-gold-100: rgba(250, 204, 21, 0.12);
+  --color-mediumspringgreen-100: rgba(74, 222, 128, 0.12);
+  --color-tomato-100: rgba(247, 85, 85, 0.2);
+  --color-tomato-200: rgba(247, 85, 85, 0.12);
+  --greyscale-100: #f5f5f5;
+  --color-whitesmoke-100: #eaeaea;
+  --color-silver-100: #bdbdbd;
+  --greyscale-400: rgba(189, 189, 189, 0.5);
+  --primary-100: #e9f0ff;
+  --color-lavender-100: #ccdcec;
+  --color-darkgray-100: #999;
+  --color-darkgray-200: rgba(158, 158, 158, 0.6);
+  --others-orange: #ff981f;
+  --alerts-status-info: #6949ff;
+  --others-green: #4aaf57;
+  --color-orange: #f99a0e;
+  --color-cornflowerblue-100: #1262af;
+  --color-cornflowerblue-200: #1262ae;
+
+  /* Gaps */
+  --gap-90xl: 109px;
+  --gap-6xs: 7px;
+  --gap-5xs: 8px;
+  --gap-13xl: 32px;
+  --gap-xs: 12px;
+  --gap-41xl: 60px;
+  --gap-7xs: 6px;
+  --gap-base: 16px;
+  --gap-3xl: 22px;
+  --gap-xl: 20px;
+  --gap-mini: 15px;
+  --gap-3xl-4: 22.4px;
+  --gap-5xs-5: 7.5px;
+  --gap-mid-2: 17.2px;
+  --gap-11xs: 2px;
+  --gap-4xs-2: 8.2px;
+  --gap-8xs-5: 4.5px;
+  --gap-mid-9: 17.9px;
+  --gap-10xs-2: 2.2px;
+  --gap-12xs: 1px;
+
+  /* Paddings */
+  --padding-8xs: 5px;
+  --padding-12xs: 1px;
+  --padding-4xs: 9px;
+  --padding-xs: 12px;
+  --padding-5xs: 8px;
+  --padding-121xl: 140px;
+  --padding-7xs: 6px;
+  --padding-base: 16px;
+  --padding-xl: 20px;
+  --padding-3xs: 10px;
+  --padding-5xl: 24px;
+  --padding-26xl: 45px;
+  --padding-9xl: 28px;
+  --padding-sm: 14px;
+  --padding-10xl: 29px;
+  --padding-9xs: 4px;
+  --padding-21xl: 40px;
+  --padding-13xl: 32px;
+  --padding-lg: 18px;
+  --padding-mid: 17px;
+  --padding-11xl: 30px;
+  --padding-mini: 15px;
+  --padding-base-4: 16.4px;
+  --padding-40xl-8: 59.8px;
+  --padding-xs-2: 11.2px;
+  --padding-3xs-7: 9.7px;
+  --padding-0: 0px;
+  --padding-9xs-7: 3.7px;
+  --padding-10xs: 3px;
+  --padding-10xs-2: 2.2px;
+  --padding-8xs-5: 4.5px;
+
+  /* Border radiuses */
+  --br-10xs: 3px;
+  --br-81xl: 100px;
+  --br-xs: 12px;
+  --br-33xl: 52px;
+  --br-8xs: 5px;
+  --br-981xl: 1000px;
+  --br-xl: 20px;
+  --br-7xs: 6px;
+  --br-base: 16px;
+  --br-6xl: 25px;
+  --br-8xs-6: 4.6px;
+  --br-341xl: 360px;
+  --br-3xs: 10px;
+  --br-4xl-2: 23.2px;
+  --br-5xs-5: 7.5px;
+  --br-28xl-8: 47.8px;
+
+  /* Effects */
+  --bg-blur: blur(30px);
+  --button-shadow-1: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --button-shadow-2: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  --drop-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.15) inset;
+}

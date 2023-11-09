@@ -1,0 +1,45 @@
+.flagIcon {
+  position: relative;
+  width: 24px;
+  height: 18px;
+}
+.iconlylightarrowDown2 {
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+.flagParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.label {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.2px;
+  line-height: 140%;
+}
+.statusdefaultTypephoneSt {
+  position: absolute;
+  top: 376px;
+  left: 16px;
+  border-radius: var(--br-base);
+  background-color: var(--primary-100);
+  box-shadow: var(--button-shadow-2);
+  border: 1px solid var(--greyscale-300);
+  box-sizing: border-box;
+  width: 382px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xl);
+  gap: var(--gap-xs);
+  text-align: left;
+  font-size: var(--body-large-semibold-size);
+  color: var(--greyscale-700);
+  font-family: var(--body-medium-semibold);
+}

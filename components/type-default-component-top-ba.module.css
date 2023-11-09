@@ -1,0 +1,42 @@
+.div,
+.groupIcon {
+  position: absolute;
+}
+.div {
+  top: calc(50% - 11px);
+  left: 23px;
+  letter-spacing: 0.2px;
+  line-height: 140%;
+  font-weight: 600;
+}
+.groupIcon {
+  top: calc(50% - 4px);
+  right: 76px;
+  width: 18px;
+  height: 10px;
+}
+.groupIcon1,
+.groupIcon2 {
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 55.7px;
+  width: 15.3px;
+  height: 11px;
+}
+.groupIcon2 {
+  top: calc(50% - 6px);
+  right: 23px;
+  width: 27px;
+  height: 13px;
+}
+.typedefaultComponenttopBa {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  width: 430px;
+  height: 44px;
+  text-align: left;
+  font-size: var(--body-large-semibold-size);
+  color: var(--others-black);
+  font-family: var(--body-medium-semibold);
+}

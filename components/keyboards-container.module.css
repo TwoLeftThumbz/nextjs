@@ -1,0 +1,43 @@
+.label {
+  align-self: stretch;
+  position: relative;
+  line-height: 140%;
+}
+.keyboardsChild {
+  position: relative;
+  width: 107px;
+  height: 25px;
+}
+.keyboard {
+  border-radius: var(--br-8xs);
+  width: 910px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-base) var(--padding-sm);
+  box-sizing: border-box;
+  gap: var(--gap-3xl);
+  text-align: center;
+  font-size: var(--font-size-3xl-5);
+  font-family: var(--font-inter);
+}
+.keyboardsItem {
+  position: relative;
+  background-color: var(--color-gainsboro-200);
+  width: 40px;
+  height: 11px;
+}
+.keyboards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+  text-align: left;
+  font-size: var(--h3-bold-size);
+  color: var(--greyscale-900);
+  font-family: var(--body-medium-semibold);
+}

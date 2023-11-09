@@ -1,0 +1,59 @@
+.iconlycurvedchart {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.horizontalTab {
+  line-height: 140%;
+}
+.div,
+.horizontalTab {
+  position: relative;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+}
+.autoLayoutHorizontal,
+.autoLayoutHorizontal1 {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.autoLayoutHorizontal1 {
+  border-radius: var(--br-81xl);
+  background-color: var(--others-white);
+  width: 20px;
+  height: 20px;
+  display: none;
+  padding: var(--padding-5xs);
+  box-sizing: border-box;
+  font-size: var(--body-xsmall-semibold-size);
+}
+.autoLayoutHorizontal {
+  align-self: stretch;
+  display: flex;
+  gap: var(--gap-5xs);
+}
+.rectangle {
+  align-self: stretch;
+  position: relative;
+  border-radius: var(--br-81xl);
+  background-color: var(--primary-500);
+  height: 4px;
+}
+.stateactiveStyleiconThem {
+  position: absolute;
+  top: 162px;
+  left: 212px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  text-align: center;
+  font-size: var(--body-xlarge-bold-size);
+  color: var(--primary-500);
+  font-family: var(--body-medium-semibold);
+}
