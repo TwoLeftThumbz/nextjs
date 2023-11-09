@@ -11,7 +11,7 @@ const DarkRequestMoneyAllContac = () => {
   const router = useRouter();
 
   const onAutoLayoutVertical11Click = useCallback(() => {
-    router.push("/dark-transfer-to-bank-select");
+    router.push("/");
   }, [router]);
 
   return (

@@ -1,5 +1,5 @@
 import ThemeDarkComponentNavbar from "../components/theme-dark-component-navbar";
-import TypeCreditCardThemeDark from "/";
+import TypeCreditCardThemeDark from "../components/type-credit-card-theme-dark";
 import ThemeDarkComponentButtomB from "../components/theme-dark-component-buttom-b";
 import TypeDefaultComponentTopBa from "../components/type-default-component-top-ba";
 
