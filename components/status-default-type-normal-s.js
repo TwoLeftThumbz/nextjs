@@ -1,66 +1,57 @@
 import { useMemo } from "react";
-import styles from "./status-default-type-normal-s.module.css";
 
 const StatusDefaultTypeNormalS = ({
-  dimensionCode,
-  dimensionCodeImageUrl,
-  dimensionCodeText,
-  dimensionCodeImageText,
-  propLeft,
-  propBorder,
-  propTop,
-  propBackgroundColor,
-  propBoxShadow,
-  propColor,
-  propFontWeight,
-  propColor1,
+  additionalIcons,
+  iconlyBoldProfile,
+  label,
+  additionalIcons1,
+  iconlyBoldArrowDown2,
+  showIconlyBoldProfile,
+  labelColor,
+  labelFontWeight,
+  labelColor1,
 }) => {
-  const statusDefaultTypeNormalSStyle = useMemo(() => {
-    return {
-      left: propLeft,
-      border: propBorder,
-      top: propTop,
-      backgroundColor: propBackgroundColor,
-      boxShadow: propBoxShadow,
-    };
-  }, [propLeft, propBorder, propTop, propBackgroundColor, propBoxShadow]);
-
   const label1Style = useMemo(() => {
     return {
-      color: propColor,
-      fontWeight: propFontWeight,
+      color: labelColor,
+      fontWeight: labelFontWeight,
     };
-  }, [propColor, propFontWeight]);
+  }, [labelColor, labelFontWeight]);
 
   const label2Style = useMemo(() => {
     return {
-      color: propColor1,
+      color: labelColor1,
     };
-  }, [propColor1]);
+  }, [labelColor1]);
 
   return (
-    <div
-      className={styles.statusdefaultTypenormalS}
-      style={statusDefaultTypeNormalSStyle}
-    >
-      <img className={styles.additionalIcons} alt="" src={dimensionCode} />
+    <div className="rounded-2xl bg-gray-100 shadow-[1px_1px_5px_1px_rgba(0,_0,_0,_0.15)_inset] h-14 flex flex-row items-center justify-start p-5 box-border gap-[12px] text-left text-base text-greyscale-600 font-body-medium-medium self-stretch">
       <img
-        className={styles.iconlyboldprofile}
+        className="relative w-5 h-5 overflow-hidden shrink-0 hidden"
         alt=""
-        src={dimensionCodeImageUrl}
+        src={additionalIcons}
       />
-      <div className={styles.label} style={label1Style}>
-        Placeholder
+      {showIconlyBoldProfile && (
+        <img className="relative w-5 h-5" alt="" src={iconlyBoldProfile} />
+      )}
+      <div
+        className="flex-1 relative tracking-[0.2px] leading-[140%]"
+        style={label1Style}
+      >
+        {label}
       </div>
-      <div className={styles.label1} style={label2Style}>
+      <div
+        className="relative text-sm tracking-[0.2px] leading-[140%] font-semibold text-greyscale-500 text-right hidden"
+        style={label2Style}
+      >
         kg
       </div>
-      <img className={styles.additionalIcons} alt="" src={dimensionCodeText} />
       <img
-        className={styles.iconlyboldprofile}
+        className="relative w-5 h-5 overflow-hidden shrink-0 hidden"
         alt=""
-        src={dimensionCodeImageText}
+        src={additionalIcons1}
       />
+      <img className="relative w-5 h-5" alt="" src={iconlyBoldArrowDown2} />
     </div>
   );
 };

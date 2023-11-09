@@ -1,32 +1,40 @@
 import { useMemo } from "react";
-import styles from "./state-enabled-theme-default.module.css";
 
 const StateEnabledThemeDefault = ({
-  propLeft,
-  propBackgroundColor,
-  propLeft1,
-  propBorder,
+  stateEnabledThemeDefaultBackgroundColor,
+  stateEnabledThemeDefaultPosition,
+  stateEnabledThemeDefaultFlexShrink,
+  frameLeft,
+  frameBorder,
 }) => {
   const stateEnabledThemeDefaultStyle = useMemo(() => {
     return {
-      left: propLeft,
-      backgroundColor: propBackgroundColor,
+      backgroundColor: stateEnabledThemeDefaultBackgroundColor,
+      position: stateEnabledThemeDefaultPosition,
+      flexShrink: stateEnabledThemeDefaultFlexShrink,
     };
-  }, [propLeft, propBackgroundColor]);
+  }, [
+    stateEnabledThemeDefaultBackgroundColor,
+    stateEnabledThemeDefaultPosition,
+    stateEnabledThemeDefaultFlexShrink,
+  ]);
 
   const frameStyle = useMemo(() => {
     return {
-      left: propLeft1,
-      border: propBorder,
+      left: frameLeft,
+      border: frameBorder,
     };
-  }, [propLeft1, propBorder]);
+  }, [frameLeft, frameBorder]);
 
   return (
     <div
-      className={styles.stateenabledThemedefault}
+      className="rounded-981xl bg-alerts-status-button-disabled w-11 h-6 overflow-hidden"
       style={stateEnabledThemeDefaultStyle}
     >
-      <div className={styles.frame} style={frameStyle} />
+      <div
+        className="absolute top-[0px] left-[20px] rounded-981xl bg-others-white box-border w-6 h-6 overflow-hidden border-[2px] border-solid border-primary-500"
+        style={frameStyle}
+      />
     </div>
   );
 };

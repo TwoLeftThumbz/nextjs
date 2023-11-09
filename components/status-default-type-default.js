@@ -1,80 +1,52 @@
 import { useMemo } from "react";
-import styles from "./status-default-type-default.module.css";
 
 const StatusDefaultTypeDefault = ({
-  placeholderText,
-  showLabel,
-  propTop,
-  propWidth,
-  propHeight,
-  propJustifyContent,
-  propPadding,
-  propOverflow,
-  propLeft,
-  propBorder,
-  propBackgroundColor,
-  propBoxShadow,
-  propFlex,
-  propFontSize,
-  propLetterSpacing,
-  propColor,
-  propTextAlign,
-  propFontWeight,
+  itemDescription,
+  statusDefaultTypeDefaultBorder,
+  statusDefaultTypeDefaultFontWeight,
+  statusDefaultTypeDefaultFontFamily,
+  statusDefaultTypeDefaultFontSize,
+  statusDefaultTypeDefaultHeight,
+  statusDefaultTypeDefaultAlignItems,
+  labelColor,
+  labelFontWeight,
 }) => {
   const statusDefaultTypeDefaultStyle = useMemo(() => {
     return {
-      top: propTop,
-      width: propWidth,
-      height: propHeight,
-      justifyContent: propJustifyContent,
-      padding: propPadding,
-      overflow: propOverflow,
-      left: propLeft,
-      border: propBorder,
-      backgroundColor: propBackgroundColor,
-      boxShadow: propBoxShadow,
+      border: statusDefaultTypeDefaultBorder,
+      fontWeight: statusDefaultTypeDefaultFontWeight,
+      fontFamily: statusDefaultTypeDefaultFontFamily,
+      fontSize: statusDefaultTypeDefaultFontSize,
+      height: statusDefaultTypeDefaultHeight,
+      alignItems: statusDefaultTypeDefaultAlignItems,
     };
   }, [
-    propTop,
-    propWidth,
-    propHeight,
-    propJustifyContent,
-    propPadding,
-    propOverflow,
-    propLeft,
-    propBorder,
-    propBackgroundColor,
-    propBoxShadow,
+    statusDefaultTypeDefaultBorder,
+    statusDefaultTypeDefaultFontWeight,
+    statusDefaultTypeDefaultFontFamily,
+    statusDefaultTypeDefaultFontSize,
+    statusDefaultTypeDefaultHeight,
+    statusDefaultTypeDefaultAlignItems,
   ]);
 
-  const label5Style = useMemo(() => {
+  const labelStyle = useMemo(() => {
     return {
-      flex: propFlex,
-      fontSize: propFontSize,
-      letterSpacing: propLetterSpacing,
-      color: propColor,
-      textAlign: propTextAlign,
-      fontWeight: propFontWeight,
+      color: labelColor,
+      fontWeight: labelFontWeight,
     };
-  }, [
-    propFlex,
-    propFontSize,
-    propLetterSpacing,
-    propColor,
-    propTextAlign,
-    propFontWeight,
-  ]);
+  }, [labelColor, labelFontWeight]);
 
   return (
     <div
-      className={styles.statusdefaultTypedefault}
+      className="rounded-2xl bg-gray-100 shadow-[1px_1px_5px_1px_rgba(0,_0,_0,_0.15)_inset] h-14 flex flex-row items-center justify-start p-5 box-border text-left text-base text-greyscale-600 font-body-medium-medium self-stretch"
       style={statusDefaultTypeDefaultStyle}
     >
-      {showLabel && (
-        <div className={styles.label} style={label5Style}>
-          {placeholderText}
-        </div>
-      )}
+      <div
+        className="flex-1 relative tracking-[0.2px] leading-[140%]"
+        style={labelStyle}
+      >
+        {itemDescription}
+      </div>
     </div>
   );
 };

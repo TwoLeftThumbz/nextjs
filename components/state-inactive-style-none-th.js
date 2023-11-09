@@ -1,48 +1,11 @@
-import { useMemo } from "react";
-import styles from "./state-inactive-style-none-th.module.css";
-
-const StateInactiveStyleNoneTh = ({
-  tabLabel,
-  propPosition,
-  propTop,
-  propLeft,
-  propWidth,
-  propFlex,
-  propColor,
-  propBackgroundColor,
-}) => {
-  const stateInactiveStyleNoneThStyle = useMemo(() => {
-    return {
-      position: propPosition,
-      top: propTop,
-      left: propLeft,
-      width: propWidth,
-      flex: propFlex,
-    };
-  }, [propPosition, propTop, propLeft, propWidth, propFlex]);
-
-  const horizontalTabStyle = useMemo(() => {
-    return {
-      color: propColor,
-    };
-  }, [propColor]);
-
-  const rectangleStyle = useMemo(() => {
-    return {
-      backgroundColor: propBackgroundColor,
-    };
-  }, [propBackgroundColor]);
-
+const StateInactiveStyleNoneTh = ({ tabLabel }) => {
   return (
-    <div
-      className={styles.stateinactiveStylenoneTh}
-      style={stateInactiveStyleNoneThStyle}
-    >
-      <div className={styles.horizontalTab} style={horizontalTabStyle}>
+    <div className="flex flex-col items-center justify-start gap-[12px] text-center text-lg text-greyscale-700 font-body-medium-medium flex-1">
+      <div className="self-stretch relative tracking-[0.2px] leading-[140%] font-semibold">
         {tabLabel}
       </div>
-      <div className={styles.rectangleWrapper}>
-        <div className={styles.rectangle} style={rectangleStyle} />
+      <div className="self-stretch flex flex-col items-center justify-end py-px px-0">
+        <div className="self-stretch relative rounded-81xl bg-dark-dark-3 h-0.5" />
       </div>
     </div>
   );
