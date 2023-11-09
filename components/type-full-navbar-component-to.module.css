@@ -58,7 +58,7 @@
 .autoLayoutHorizontal3 {
   align-items: flex-end;
   justify-content: center;
-  padding: var(--padding-0) var(--padding-5xl);
+  padding: 0 var(--padding-5xl);
 }
 .typefullNavbarComponentto {
   position: absolute;

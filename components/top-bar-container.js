@@ -13,7 +13,7 @@ const TopBarContainer = () => {
         <div className={styles.statusBar}>
           <TypeDefaultComponentTopBa />
           <TypeIconBackComponentTop />
-          <TypeFullNavbarComponentTo />
+          <TypeFullNavbarComponentTo navBar="navBar" />
         </div>
       </div>
       <div className={styles.topBars}>

@@ -4,7 +4,7 @@ import StateActiveStyleNoneThem from "./state-active-style-none-them";
 import StateInactiveStyleNoneTh from "./state-inactive-style-none-th";
 import styles from "./type-full-navbar-component-to.module.css";
 
-const TypeFullNavbarComponentTo = () => {
+const TypeFullNavbarComponentTo = ({ navBar }) => {
   return (
     <div className={styles.typefullNavbarComponentto}>
       <TypeDefaultComponentTopBa
@@ -23,7 +23,7 @@ const TypeFullNavbarComponentTo = () => {
             src="/iconlylightarrow--left2.svg"
           />
           <img className={styles.avatarIcon} alt="" src="/avatar.svg" />
-          <b className={styles.header}>Header</b>
+          <b className={styles.header}>{navBar}</b>
         </div>
         <div className={styles.autoLayoutHorizontal2}>
           <img

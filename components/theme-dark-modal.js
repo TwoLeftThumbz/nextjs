@@ -10,6 +10,7 @@ const ThemeDarkModal = ({
   propColor1,
   propBackgroundColor1,
   propColor2,
+  modalTitle,
 }) => {
   const themeDarkModalStyle = useMemo(() => {
     return {
@@ -46,7 +47,7 @@ const ThemeDarkModal = ({
     <div className={styles.themedarkModal} style={themeDarkModalStyle}>
       <img className={styles.groupIcon} alt="" src={dimensionLabel} />
       <div className={styles.autoLayoutVertical}>
-        <b className={styles.modalTitle}>Modal Title</b>
+        <b className={styles.modalTitle}>{modalTitle}</b>
         <div className={styles.loremIpsumDolor} style={loremIpsumDolorStyle}>
           Lorem ipsum dolor sit amet hua qui lori ipsum sit ghui amet poety amet
         </div>
@@ -56,7 +57,7 @@ const ThemeDarkModal = ({
           propTop="unset"
           propBackgroundColor="#006fee"
           propHeight="58px"
-          propPadding="var(--padding-0) var(--padding-base)"
+          propPadding="0px var(--padding-base)"
           propPosition="unset"
           propLeft="unset"
           propWidth="unset"

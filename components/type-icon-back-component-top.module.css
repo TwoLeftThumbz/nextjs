@@ -84,7 +84,7 @@
   width: 430px;
   flex-direction: column;
   justify-content: flex-start;
-  padding: var(--padding-0) var(--padding-0) var(--padding-xs);
+  padding: 0 0 var(--padding-xs);
   gap: var(--gap-base);
   text-align: left;
   font-size: var(--h4-bold-size);

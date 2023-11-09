@@ -28,7 +28,7 @@
   box-shadow: var(--button-shadow-1);
   width: 382px;
   height: 58px;
-  padding: var(--padding-0) var(--padding-base);
+  padding: 0 var(--padding-base);
   box-sizing: border-box;
   text-align: center;
   font-size: var(--body-large-semibold-size);
